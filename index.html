@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description" content="SEO info" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300&family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assests/workings/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Yfkes calendar & booking system</title>
+  </head>
+  <body>
+    <header>
+      <h1>Yfkes Calender & Booking system</h1>
+    </header>
+    <div class="container">
+      <div class="left">
+        <div class="calendar">
+          <div class="month">
+            <i class="fa fa-angle-left prev"></i>
+            <div class="date"></div>
+            <i class="fa fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div class="weekday">Sun</div>
+            <div class="weekday">Mon</div>
+            <div class="weekday">Tue</div>
+            <div class="weekday">Wed</div>
+            <div class="weekday">Thu</div>
+            <div class="weekday">Fri</div>
+            <div class="weekday">Sat</div>
+          </div>
+          <div class="days">
+            <!-- We will populate from js -->
+          </div>
+          <div class="goto-day">
+            <div class="goto">
+              <input type="text" class="date-input" placeholder="mm/yyyy" />
+              <button class="cal-goto-btn goto-btn">Go to</button>
+            </div>
+            <button class="cal-goto-btn today-btn">Find Today</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        &copy;
+        <img class="footer-img" src="/assests/images/rose_simplified_yellow_100.png" alt="Yfkes logo" />
+        <script src="/assests/workings/scripts.js"></script>
+      </p>
+    </footer>
+  </body>
+</html>
