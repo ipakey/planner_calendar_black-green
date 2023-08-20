@@ -91,7 +91,8 @@ h1 {
 
 .right .today-date {
   width: 100%;
-  height: 50px;
+  /* height: 50px; */
+  font-size: 1.2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -99,20 +100,15 @@ h1 {
   justify-content: space-between;
   padding: 0 40px;
   padding-left: 70px;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-bottom: 20px;
   text-transform: capitalize;
 }
 
-.today-date .event-day {
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: var(--clr-lightest);
-}
-
+.today-date .event-day,
 .today-date .event-date {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 300;
   color: var(--clr-lightest);
 }
 
@@ -123,7 +119,7 @@ h1 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   color: var(--clr-lighter);
   border-radius: 5px;
   background-color: var(--clr-darker);
@@ -248,24 +244,27 @@ h1 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  box-shadow: 0 0 10px 8px var(--clr-contrast);
+  height: 95%;
+  margin-bottom: 15%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px 8px var(--clr-shadow);
+  font-size: 1.7rem;
 }
 
 .calendar .days .today {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--clr-contrast);
 }
 
 .calendar .days .event {
   position: relative;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   box-shadow: 0 0 10px 4px var(--clr-lightest);
 }
 .calendar .days .event::after {
   content: '';
   position: absolute;
-  bottom: 10%;
+  top: 25%;
   left: 50%;
   width: 75%;
   height: 6px;
@@ -291,6 +290,8 @@ h1 {
 }
 
 .goto-day {
+  position: absolute;
+  bottom: 0.2rem;
   width: 90%;
   height: 50px;
   display: flex;
@@ -397,7 +398,7 @@ h1 {
   pointer-events: none;
 }
 
-.event::after {
+.events .event::after {
   content: '&#100031';
   position: absolute;
   top: 50%;
@@ -415,6 +416,18 @@ h1 {
   display: flex;
 }
 
+.right .events .no-event h3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-family: var(--fnt-number); */
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 450;
+  color: var(--clr-lighter);
+}
 .add-event-wrapper {
   position: absolute;
   bottom: 100px;
@@ -542,4 +555,23 @@ input {
 .add-event-bye:hover {
   background-color: var(--clr-highlight);
   color: var(--clr-darkest);
+}
+
+.events-footer {
+  position: absolute;
+  bottom: 0.2rem;
+  width: 90%;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.events-footer .cal-goto-btn {
+  opacity: 0.7;
+}
+
+.events-footer .add-event-btn:hover,
+.events-footer .edit-event-btn:hover,
+.events-footer .close-event-btn:hover {
+  opacity: 1;
 }
