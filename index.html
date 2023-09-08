@@ -10,12 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300&family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/assests/workings/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Yfkes calendar & booking system</title>
+    <title>Calendar & bookings</title>
   </head>
   <body>
-    <header>
-      <h1>Yfkes Calender & Booking system</h1>
-    </header>
     <div class="container">
       <div class="left">
         <div class="calendar">
@@ -58,7 +55,29 @@
         
         <div class="add-event-wrapper">
           <div class="add-event-header">
-            <div class="title">Add an Event</div>
+            <div class="title">Add an Event </div>
+            <!-- <div class="event-date"></div> -->
+            <!-- <fieldset class="status">
+                  <legend>Status
+                    <div class="" >
+                      <input type="radio" hidden name="input-event-status" id="status" class="event-input-radio" value="Unconfirmed" />
+                      <label for="status">Unconfirmed</label>
+                      </div>
+                      <div class="">
+                        <input type="radio" hidden name="input-event-status" id="status" class="event-input-radio" value="Delivered" />
+                      <label for="status">Delivered</label>
+                      </div>
+                      <div class=""">
+                        <input type="radio" hidden name="input-event-status" id="status" class="event-input-radio" value="Paid" />
+                      <label for="status">Paid</label>
+                      </div>
+                      <div class="">
+                        <input type="radio" hidden name="input-event-status" id="status" class="event-input-radio" value="Confirmed" />
+                      <label for="status">Confirmed</label>
+                      </div>
+               
+                   
+                  </fieldset> -->
               <i class="fas fa-times close"></i>
           </div>
           <div class="add-event-body">
@@ -67,31 +86,33 @@
                 <fieldset class="place">
                   <legend>Where is your session?</legend>
                   <!-- <div class="">
-                    <input type="radio" name="input-event-venue" id="venue" class="event-venue" value="yours" />
+                    <input type="radio" name="input-event-venue" id="venue" class="event-input-radio" value="yours" />
                     <label for="yours">Your Place</label>
                   </div> -->
                   <div class="">
-                          <input type="radio" name="input-event-venue" id="venue" class="event-venue" value="mine" />
+                          <input type="radio" name="input-event-venue" id="venue" class="event-input-radio" value="H" />
                       <label for="mine">My Place</label>
                   </div>
                    <div class="">
-                       <input type="radio" name="input-event-venue" id="venue" class="event-venue" value="online" />
+                       <input type="radio" name="input-event-venue" id="venue" class="event-input-radio" value="O" />
                       <label for="online">Online</label>
                    </div>
                   </fieldset>
                   <fieldset class="type">
                   <legend>What type of session?
                     <div class="">
-                      <input type="radio" name="input-event-type" id="group" class="event-type" value="group" />
+                      <input type="radio" name="input-event-type" id="group" class="event-input-radio" value="G" />
                       <label for="group">Group</label>
                       </div>
                       <div class="">
-                      <input type="radio" name="input-event-type" id="individual" class="event-type" value="individual" />
+                      <input type="radio" name="input-event-type" id="individual" class="event-input-radio" value="I"/>
                       <label for="individual">Individual</label>
                     </div>
                   </fieldset>
+
                 </div>
                 <input type="text" name="input-event-name" id="input-event-name" class="event-name" placeholder="Attendee" />
+                <input type="text" name="input-event-name" id="input-event-subject" class="event-name" placeholder="Subject" />
                 <div class="times">
                    <input type="text" name="input-event-from" id="input-event-from" class="event-time" placeholder="Time From" />
                   <input type="text" name="input-event-to" id="input-event-to" class="event-time" placeholder="Time to" />
